@@ -1,0 +1,10 @@
+app.js-all the connection to server and connection to db is there
+index.js- endpoint 
+validators - all the validations are checked and is followed by controller
+controller - all the main function is there in controller which is followed by services in which all the db queries are there.
+
+index.js -> validators ->controller -> services
+
+in this API we used transactions here ,because if admin deletes one category and it is unable to delete all the records , so it will rollback all the queries executed, in order to check weather all the products are deleted or neither of them is deleted.
+
+we can run our project by pm2(process manager) or directly node app.js 
